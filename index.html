@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- TAG SEO PER GOOGLE -->
+    <title>Passata di Pomodoro Artigianale | Azienda Agricola I Poeti Negrar Valpolicella</title>
+    <meta name="description" content="Passata di pomodoro naturale e artigianale prodotta a Negrar di Valpolicella dall'Azienda Agricola I Poeti di Nicoli Federico. Pomodori 100% veronesi lavorati a mano.">
+    <meta name="keywords" content="passata di pomodoro, passata artigianale, passata naturale, pomodoro verona, valpolicella, negrar, sengia sbusa, poeti della sengia sbusa, antiche tenute dei conti nicoli, nicoli federico, ppl veneto, prodotti tipici veronesi, passata fatta a mano">
+    <meta name="author" content="Azienda Agricola I Poeti di Nicoli Federico">
+    <meta name="robots" content="index, follow">
+
+    <style>
+        :root {
+            --primary: #8B0000;
+            --primary-dark: #5A0000;
+            --accent: #D4AF37;
+            --bg-light: #FAF8F5;
+            --text-dark: #2B2B2B;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Georgia', serif;
+            line-height: 1.7;
+            color: var(--text-dark);
+            background-color: var(--bg-light);
+        }
+
+        header {
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('harvest.jpg') center/cover no-repeat;
+            color: #ffffff;
+            text-align: center;
+            padding: 90px 20px;
+        }
+
+        header h1 {
+            font-size: 2.8rem;
+            margin-bottom: 10px;
+            font-weight: normal;
+            letter-spacing: 1px;
+        }
+
+        header p.subtitle {
+            font-size: 1.3rem;
+            color: var(--accent);
+            font-style: italic;
+            margin-bottom: 15px;
+        }
+
+        header p.motto {
+            font-size: 1rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            border-top: 1px solid var(--accent);
+            border-bottom: 1px solid var(--accent);
+            display: inline-block;
+            padding: 5px 15px;
+            margin-top: 10px;
+        }
+
+        section {
+            padding: 60px 20px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2rem;
+            color: var(--primary);
+            margin-bottom: 30px;
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 2px;
+            background-color: var(--accent);
+            margin: 10px auto 0;
+        }
+
+        .img-container {
+            text-align: center;
+            margin: 30px 0;
+        }
+
+        .img-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+
+        .cards {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            margin-top: 30px;
+        }
+
+        .card {
+            background: #ffffff;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            padding: 25px;
+            width: 320px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .card h3 {
+            color: var(--primary);
+            margin-bottom: 10px;
+        }
+
+        .card p.desc {
+            font-size: 0.95rem;
+            color: #666;
+            margin-top: 10px;
+            font-style: italic;
+        }
+
+        .card .price-label {
+            font-size: 0.85rem;
+            color: #777;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-top: 15px;
+        }
+
+        .card .price {
+            font-size: 1.6rem;
+            color: var(--accent);
+            font-weight: bold;
+        }
+
+        .bottega-note {
+            text-align: center;
+            margin-top: 30px;
+            font-style: italic;
+            color: var(--primary-dark);
+            background-color: #f7ede2;
+            padding: 20px;
+            border-radius: 6px;
+            border: 1px dashed var(--accent);
+            line-height: 1.6;
+        }
+
+        .badge-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 30px;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 4px solid var(--primary);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+
+        .badge-container img {
+            width: 70px;
+            height: auto;
+        }
+
+        .badge-text {
+            text-align: left;
+        }
+
+        .story-block {
+            margin-bottom: 35px;
+        }
+
+        .story-block h3 {
+            color: var(--primary-dark);
+            margin-bottom: 10px;
+        }
+
+        footer {
+            background-color: var(--primary-dark);
+            color: #ffffff;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        footer h2 {
+            color: var(--accent);
+            margin-bottom: 15px;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background-color: var(--accent);
+            color: var(--primary-dark);
+            padding: 12px 30px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+
+        @media (max-width: 600px) {
+            header h1 { font-size: 2rem; }
+            header p.subtitle { font-size: 1.1rem; }
+            section { padding: 40px 15px; }
+            .badge-container {
+                flex-direction: column;
+                text-align: center;
+            }
+            .badge-text {
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Azienda Agricola "I Poeti"</h1>
+        <p class="subtitle">di Nicoli Federico</p>
+        <p class="subtitle">Antiche Tenute dei Conti Nicoli</p>
+        <p class="motto">Per Ardua Ad Honorem</p>
+    </header>
+
+    <section id="prodotto">
+        <h2 class="section-title">La Nostra Passata Artigianale</h2>
+        <p>
+            Sposiamo appieno i valori della passata della tradizione veronese, tramandata di nonna in mamma. 
+            Utilizziamo esclusivamente pomodori di nostra produzione, coltivati con cura a Negrar di Valpolicella e lavorati rigorosamente 
+            a mano senza l'aggiunta di conservanti.
+        </p>
+
+        <div class="img-container">
+            <img src="passata.jpg" alt="Passata di Pomodoro Artigianale Antiche Tenute dei Conti Nicoli Verona">
+        </div>
+
+        <div class="badge-container">
+            <img src="logo-PPL-Veneto.png" alt="Logo Piccole Produzioni Locali Veneto">
+            <div class="badge-text">
+                <strong>Qualità e Tradizione Locale:</strong> Stiamo completando gli ultimi corsi per ottenere il riconoscimento ufficiale <strong>PPL Venete</strong> (Piccole Produzioni Locali).
+            </div>
+        </div>
+
+        <div class="cards">
+            <div class="card">
+                <div>
+                    <h3>Formato Medio (314 ml)</h3>
+                    <p>Passata naturale lavorata a mano</p>
+                    <p class="desc">Ideale per un pranzo per una famiglia di 4 persone.</p>
+                </div>
+                <div>
+                    <div class="price-label">Prezzo consigliato</div>
+                    <div class="price">€ 4,80</div>
+                </div>
+            </div>
+            <div class="card">
+                <div>
+                    <h3>Formato Grande (446 ml)</h3>
+                    <p>Passata naturale lavorata a mano</p>
+                    <p class="desc">Perfetto per le grandi tavolate in famiglia o per una cena della domenica in compagnia.</p>
+                </div>
+                <div>
+                    <div class="price-label">Prezzo consigliato</div>
+                    <div class="price">€ 5,90</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="bottega-note">
+            🛒 <strong>Dove trovarla:</strong> La nostra passata artigianale è una produzione limitata ed è disponibile solo nei migliori negozi specializzati, gastronomie selezionate, macellerie e fruttivendoli di fiducia che ricercano l'eccellenza e il vero sapore veronese.
+        </div>
+    </section>
+
+    <section id="storia" style="background-color: #f2ece4; border-top: 1px solid #e5dcd0; border-bottom: 1px solid #e5dcd0;">
+        <h2 class="section-title">Poesia, Territorio e Pomodoro</h2>
+
+        <div class="story-block">
+            <h3>L'Origine del Nome: "I Poeti"</h3>
+            <p>
+                Il nome della nostra azienda nasce dal ricordo del poeta della <em>Sengia Sbusa</em>, un prozio cantastorie che portava notizie, 
+                buonumore e speranza nelle case della Valpolicella durante i periodi più difficili e nei lunghi filò nelle stalle. Un cantastorie amato da tutti per la sua capacità di incantare l'anima.
+            </p>
+        </div>
+
+        <div class="story-block">
+            <h3>Il Territorio e la Sengia Sbusa a Negrar</h3>
+            <p>
+                Nel cuore di Negrar di Valpolicella sorge la <em>Sengia Sbusa</em> ("pietra bucata"), un monolite carsico alto 52 metri con un misterioso foro che guarda all'infinito. 
+                Qui si dice tradizionalmente che tutti i bambini siano nati dalla Sengia Sbusa, un simbolo naturale unico tra le marogne della nostra vallata veronese.
+            </p>
+        </div>
+
+        <div class="img-container">
+            <img src="pasta.jpg" alt="Piatto di pasta condito con passata di pomodoro naturale veronese">
+        </div>
+
+        <div class="story-block">
+            <h3>Antiche Tenute dei Conti Nicoli</h3>
+            <p>
+                Si dice che un tempo fossimo nobili... o forse è solo una voce del passato! La verità è che oggi siamo "Conti" davvero grazie all'unione tra me e mia moglie Elisa (di cognome Conti, per l'appunto!). 
+                Insieme alle nostre tre figlie custodiamo questo legame con la terra: perché per ritrovare l'onore non servono blasoni o carte antiche, ma basta un pomodoro maturo sotto il sole di agosto e una famiglia che cammina insieme.
+            </p>
+        </div>
+    </section>
+
+    <footer>
+        <h2>Contatti e Punti Vendita</h2>
+        <p>Azienda Agricola "I Poeti" di Nicoli Federico</p>
+        <p>Negrar di Valpolicella (Verona)</p>
+        <br>
+        <p><em>Vuoi scoprire il punto vendita più vicino a te o proporre la nostra passata nel tuo negozio?</em></p>
+        <a href="mailto:info@continicoli.it" class="cta-button">Chiedici dove trovarla</a>
+    </footer>
+
+</body>
+</html>
